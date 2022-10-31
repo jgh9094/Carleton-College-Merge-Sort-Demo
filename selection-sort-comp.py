@@ -35,7 +35,7 @@ def SelectionSort(nums):
     print('sorted:', all(nums[i] <= nums[i+1] for i in range(len(nums) - 1)))
     return diff
 
-# merger function
+# buddy selection sort: split list -> selection sort on both -> merge sorted lists
 def SelectionSplit(nums,size):
 
     # start time
