@@ -93,9 +93,12 @@ def SelectionSplit(nums,size):
 
 # merge sort
 def MergeSort(nums):
-    # recursive step if we have more than one element
     # stoping case is when we have only 1 element
-    if 1 < len(nums):
+    if 1 == len(nums):
+        return
+
+    # recursive step if we have more than one element
+    else:
         # split the lists
         a,b = nums[:len(nums)//2],nums[len(nums)//2:]
         # recursion
