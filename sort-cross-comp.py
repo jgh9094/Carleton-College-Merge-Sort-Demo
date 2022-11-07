@@ -92,6 +92,7 @@ def SelectionSplit(nums,size):
     return diff
 
 # merge sort
+# nums: list of numbers that must be sorted using recursion
 def MergeSort(nums):
     # stoping case is when we have only 1 element
     if 1 == len(nums):
@@ -108,6 +109,9 @@ def MergeSort(nums):
         Merge(a,b,nums)
 
 # merger
+# l1: 1st half of l3
+# l2: 2nd half of l3
+# l3: merged list in sorted order
 def Merge(l1,l2,l3):
     # starting positions
     start1,start2,start3 = 0,0,0
